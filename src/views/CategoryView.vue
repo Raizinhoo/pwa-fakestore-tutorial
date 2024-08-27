@@ -1,9 +1,8 @@
 <script setup>
-import ProductList from '@/components/ProductList.vue';
-
-const props = defineProps(['category_id']);
+import CategoryList from '@/components/CategoryList.vue'
+import '@passageidentity/passage-elements/passage-auth'
 </script>
 
 <template>
-  <product-list :category_id="props.category_id" />
+  <category-list />
 </template>

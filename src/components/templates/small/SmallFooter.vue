@@ -21,6 +21,10 @@ onBeforeRouteUpdate(() => {
             <HomeOutline size="25" fillColor="#282828" />
             Home
         </RouterLink>
+        <RouterLink to="/categorias">
+            <Account size="25" fillColor="#282828" />
+            Categorias
+        </RouterLink>
         <RouterLink to="/login">
             <Account size="25" fillColor="#282828" />
             Login
@@ -31,7 +35,7 @@ onBeforeRouteUpdate(() => {
             <HomeOutline size="25" fillColor="#282828" />
             Home
         </RouterLink>
-        <RouterLink to="/">
+        <RouterLink to="/login">
             <AccountCircleOutline size="25" fillColor="#282828" />
             Perfil
         </RouterLink>
@@ -39,11 +43,16 @@ onBeforeRouteUpdate(() => {
             <CartOutline size="25" fillColor="#282828" />
             Carrinho
         </RouterLink>
+        <RouterLink to="/categorias">
+            <CartOutline size="25" fillColor="#282828" />
+            Categorias
+        </RouterLink>
 
         <div class="hamburger" @click="showMenu = !showMenu">
             <Menu size="25" fillColor="#282828" />
             Menu
         </div>
+        
     </div>
 </template>
 <style scoped>
